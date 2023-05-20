@@ -1,11 +1,11 @@
 package main;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JFrame;
 
 public class GameWin {
     private JFrame jframe;
-    public GameWin(Component gamePanel) {
+
+    public GameWin(GamePanel gamePanel) {
 
         jframe = new JFrame();
 
@@ -14,5 +14,7 @@ public class GameWin {
         jframe.add(gamePanel);
         jframe.setLocationRelativeTo(null);
         jframe.setVisible(true);
+
     }
+
 }
